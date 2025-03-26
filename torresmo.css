@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do menu */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+/* Submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+}
+
+.submenu li a {
+    padding: 10px;
+    display: block;
+    color: white;
+}
+
+.submenu li a:hover {
+    background-color: #666;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Header */
+header {
+    background-color: #f4a72c;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header img {
+    height: 80px;
+}
+
+/* Informações da receita */
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info div {
+    width: 45%;
+}
+
+/* Conteúdo */
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.content img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.content p {
+    width: 50%;
+    padding: 20px;
+}

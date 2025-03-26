@@ -1,0 +1,147 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Tamanho imagem do site */
+header img {
+    width: 60%; /* Reduz o tamanho para 60% da largura do container */
+    max-width: 400px; /* Define um limite máximo */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo do corpo da página */
+body {
+    background-color: #f8f1e5;
+    color: #333;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff9800;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 36px;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+
+/* Estiliza o submenu (dropdown) */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.submenu li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.submenu li a {
+    color: white;
+    font-size: 16px;
+    display: block;
+    text-align: left;
+}
+
+.submenu li:hover {
+    background-color: #555;
+}
+
+/* Faz o menu aparecer ao passar o mouse */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Seção de categorias */
+#categorias {
+    margin: 20px;
+}
+
+.categoria a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.categoria a:hover {
+    background-color: #e68900;
+}
+
+/* Seção de receitas em destaque */
+#destaques {
+    margin: 20px;
+}
+
+.receita {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+.receita img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.receita a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}

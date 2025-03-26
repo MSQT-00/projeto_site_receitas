@@ -1,0 +1,149 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Tamanho imagem do site */
+header img {
+    width: 60%; /* Reduz o tamanho para 60% da largura do container */
+    max-width: 400px; /* Define um limite máximo */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilização do Cabeçalho */
+header {
+    background-color: #f4a72c;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+
+/* Estiliza o submenu (dropdown) */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.submenu li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.submenu li a {
+    color: white;
+    font-size: 16px;
+    display: block;
+    text-align: left;
+}
+
+.submenu li:hover {
+    background-color: #555;
+}
+
+/* Faz o menu aparecer ao passar o mouse */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Estilização do Formulário de Login e Cadastro */
+.form-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.form-container input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-container button {
+    background-color: #f4a72c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.form-container button:hover {
+    background-color: #d88b1e;
+}
+
+/* Links de Login e Cadastro */
+.form-container p {
+    margin-top: 10px;
+}
+
+.form-container a {
+    color: #f4a72c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
